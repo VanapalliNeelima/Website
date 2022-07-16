@@ -1,0 +1,134 @@
+h3{
+    color: blue;
+    background-color: yellow;
+}
+/*b{
+    color: green;
+    background-color: blue;
+}*/
+#b{
+    background-color:darkmagenta;
+}
+.para{
+    color:blue;
+    text-align:justify ;
+    text-decoration: underline;
+    text-transform:capitalize;
+    text-indent: 100px;
+    letter-spacing: 5px;
+    line-height: 25px;
+    direction: ltr;
+    word-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:10px;
+    font-style: oblique;
+   /* background-image:url(Logonew.png);
+    background-repeat:no-repeat;
+    background-size: 50px 50px;
+    /*background-repeat: repeat-x;
+    height:4000px;
+    width:1000px;
+    background-position: top center;
+    background-attachment: fixed;*/
+    background:orange url("Logonew.png") no-repeat fixed center center;
+    outline-style:double;
+
+}
+.error{
+    text-decoration: line-through;
+    color: red;
+}
+
+h1{
+    background-color:yellow;
+    text-shadow: 3px 2px red;
+    font-style:oblique;
+    text-decoration: underline;
+    font-size: 60px;
+    border: 10px solid green;
+    margin:0px;
+}
+.hello{
+    border: solid green;
+    margin-bottom: 200px;
+}
+nav-links a{
+    color:white;
+    font-style: italic;
+    padding:15px 25px;
+    border:1px solid;
+    margin:20px;
+    background-color: pink;
+
+}
+a:link{
+    color:blue;
+    background-color: palevioletred;
+}
+a:visited{
+    color:red;
+    background-color:greenyellow;
+}
+a:hover{
+    color:#00FFFF;
+    background-color: #FFD700;
+
+}
+a:active{
+    color:green;
+}
+.i{
+    text-align: center;
+    opacity: 0.5;
+}
+.i:hover{
+    opacity: 1.0;
+    color: red;
+    outline: 1px solid red;
+}
+li{
+    /*list-style-type: circle;
+    font-size: 30px;
+    list-style-image: url(chakra.png);*/
+    border:1px solid green;
+    list-style:circle inside;
+    background-color:white;
+    padding:5px;
+    margin-left:10px;
+}
+ul{
+    background-color: black;
+    padding: 20px;
+    margin-left: 20px;
+}
+table,th,td{
+    /*border:1px solid black;*/
+    /*width:100%;*/
+    border-collapse: collapse;
+}
+th{
+    height:35px;
+    width:150px;
+    border-bottom: 1px solid  red;
+    background-color: blue;
+}
+td{
+    height:45px;
+    text-align: center;
+    /*vertical-align: bottom;
+    vertical-align: center;*/
+    padding:10px;
+    border-bottom: 1px solid  red;
+    
+}
+tr:nth-child(odd){
+    background-color: #FFD700;
+}
+tr:nth-child(even){
+    background-color:darkgreen;
+}
+tr:hover{
+    background-color: pink;
+    color:white;
+    border: 1px solid red;
+}

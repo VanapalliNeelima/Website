@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+img{
+    border-radius: 50%;
+}
+#hd{
+    background-color:white;
+    height:90px;
+    width:100%;
+    
+
+}
+#ul{
+    list-style-type:none;
+}
+.mar{
+    margin: 20px;
+    padding:50px;
+    
+}
+.link{
+    padding:10px 10px;
+}
+.np{
+    text-align: center;
+    padding: 50px;
+    font-size: 15px;
+    justify-content: center;
+    
+}
+#foot{
+    background-color: #000033;
+    color: white;
+    position: fixed;
+    bottom:0px;
+    width:100%;
+    height:50px;
+}
+#vc{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+#profile{
+    height:90px;
+    width:90px;
+    margin-left: 10px;
+    font-size: 70px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    cursor: pointer;
+}
+#bottom{
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+}
+/*body{
+    background-color: red;
+}*/
+#vc1{
+    margin-left:85px;
+    bottom:4px;
+    font-weight: bold;
+}
+a:hover{
+    color:white;
+}
+header{
+    width:100%;
+    height:100;
+    background:url("C:\Users\Neelima\Desktop\star.jpg");
+    background-size:cover;
+}
+#menu{
+    position:fixed;
+    right:50px;
+    top:15px;
+    font-size:40px;
+    color:black;
+    cursor:pointer;
+    z-index:2;
+}
+#sidenav{
+    padding:100px 0px;
+    position:fixed;
+    width:0px;
+    height:100vh;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow:inset 10px 10px 10px grey;
+    top:0px;
+    right:0px;
+}
+#sidenav ul li{
+    list-style-type: none;
+}
+#sidenav ul li a{
+    text-decoration: none;
+    color:#000033;
+    font-size: 20px;
+    margin:10px 30px;
+    display:block;
+    padding:10px;
+}
+#sidenav ul li a:hover{
+    background:whitesmoke;
+    border: white;
+    transition:0.4s;
+}
+.top-navigation{
+    margin:0;
+    padding:0;
+}
+.nav{
+    width:100%;
+    background-color: #000033;
+    height:70px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
+}
+
+ul{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+}
+ul li{
+    float:left;
+    margin-top: 12px;
+}
+
+ul li a{
+    margin-right: 150px;
+    color:white;
+    display:block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align:center;
+    padding:10px;
+    border-radius:10px;
+    font-weight: bold;
+
+}
+
+ul li ul{
+    background: #000033;
+    width: 145px;
+    display: none;
+}
+ul li ul li{
+    float:none;
+}
+ul li:hover ul{
+    display:block;
+    cursor: pointer;
+}
+ul li:hover ul li{
+    display:block;
+    cursor:pointer;
+}
+#submenu{
+    display:none;
+}
+#mainmenu:hover #submenu{
+    margin-top: -60px;
+    margin-left:140px;
+    position:absolute;
+    display:block;
+
+}
+#sb{
+    display:none;
+}
+#mm:hover #sb{
+    margin-top: -60px;
+    margin-left:140px;
+    position:absolute;
+    display:block;
+
+}
+#sr{
+    display:none;
+}
+#nn:hover #sr{
+    margin-top: -60px;
+    margin-left:140px;
+    position:absolute;
+    display:block;
+
+}
+#sm{
+    display:none;
+}
+#oo:hover #sm{
+    margin-top: -60px;
+    margin-left:140px;
+    position:absolute;
+    display:block;
+
+}
+#search-wrapper{
+    width:100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar{
+    width:100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.2);
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding:10px 20px;
+}
+.searchbar input{
+    background: transparent;
+    flex:1;
+    border-radius: 30px;
+    padding:5px 20px;
+    font-size: 20px;
+    color:black;
+}
+::placeholder{
+    color:black;
+}
+.searchbar button img{
+    width:25px;
+}
+.searchbar button{
+    border:0;
+    border-radius: 50%;
+    width:60px;
+    height: 37px;
+    background: #58629b;
+    cursor:pointer;
+}
+#first
+{
+    position:absolute;
+    top:162px;
+    background: linear-gradient(to bottom right,rgb(112, 112, 196),rgb(106, 190, 223),rgb(112, 112, 196));
+    height:360px;
+    width: 365px;
+    margin-left:0px ;
+    overflow: scroll;
+
+
+}

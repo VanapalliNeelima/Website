@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image slider</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" >
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .containter{
+                width: 500px;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .swiper{
+                width:550px;
+                height: 300px;
+                height:fit-content;
+            }
+            .swiper-slide img{
+                    width: 550px; 
+                   height: 400px;
+                   align-items: center;
+                   justify-content: center;
+                   
+            }
+            .swiper-wrapper{
+                position: relative;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper"
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="a.jpg"></div>
+              <div class="swiper-slide"><img src="b.jpg"></div>
+              <div class="swiper-slide"><img src="c.jpg"></div>
+              <div class="swiper-slide"><img src="d.jpg"></div>
+              <div class="swiper-slide"><img src="e.jpg"></div>
+              ...
+             </div>
+             <div class="swiper-pagination"></div>
+             <!-- If we need navigation buttons -->
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+            </div>
+        </div>
+       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+       <script>
+        const swiper = new Swiper('.swiper', {
+                autoplay:{
+                    delay:3000,
+                    disableOnInteraction:false,
+
+                },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable:true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+       </script>
+    </body>
+</html>

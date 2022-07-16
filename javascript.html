@@ -1,0 +1,133 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Form</title>
+        <script  src="rk.js"  type="text/javascript"></script>
+        <style>
+            body{
+                background: #000033;
+            }
+            #t{
+                background-color: aliceblue;
+                align-content: center;
+                color:black;
+                font-style: bold;
+                font-weight: bold;
+                font-size: 17px;
+                border-radius: 20px;
+                width:70%;
+                background-image:"google.jpg";
+                
+            }
+            h1{
+                font-style: oblique;
+                font-weight: bold;
+                color:aqua;
+                font-size: 50px;
+                text-decoration: underline;
+            }
+           
+            #sub{
+                opacity: 1.0;
+                size: 20px;
+                border-radius: 10px;
+                border:2px solid black;
+            }
+            #res{
+                size: 20px;
+                border-radius: 10px;
+                border:2px solid black;
+            }
+            #d{
+                width:1000px;
+                height:1000px;
+                /*background-image: url("Logonew.png");*/
+            }
+            
+        </style>
+        
+
+    </head>
+    <body>
+        <center>
+        <div id="d">
+            <form action="neelima" method="post" onsubmit="return validation();" >
+                <h1 align="center">Registration Form</h1>
+                <table id="t">
+                   <tr>
+                    
+                     <td><br>FirstName:</td>
+                     <td><br><input type="text" id="f" placeholder="Enter FirstName" onkeyup="fname();" required><label id="ferror" style="color:red;" ></label></td>
+                   </tr>
+                   <tr>
+                    <td><br>MiddleName:</td>
+                    <td><br><input type="text" id="m" placeholder="Enter MiddleName" onkeyup="mname();"><label id="merror" style="color:red" ></label></td>
+                   </tr>
+                   <tr>
+                    <td><br>LastName:</td>
+                    <td><br><input type="text" id="l" placeholder="Enter lastName" onkeyup="lname();" required><label id="lerror" style="color:red"></label></td>
+                   </tr>
+                   <tr>
+                    <td><br>FullName:</td>
+                    <td><br><input type="text" id="full" placeholder="Enter FullName" onkeyup="fullname();" readonly></td>
+                   </tr>
+                   <tr>
+                    <td><br>Password:</td>
+                    <td><br><input type="password" placeholder="Enter password" id="pass" onkeyup="checkpassword();" ><input type="checkbox" id="fn" onclick="sp();">
+                        <label id="passerror" style="visibility: hidden;" ></label></td>
+                   </tr>
+                   <tr>
+                    <td><br>Confirm Password:</td>
+                    <td><br><input type="password" id="passwd" required></td>
+                   </tr>
+                   <tr>
+                    <tr>
+                        <td><br>Email:</td>
+                        <td><br><input type="email" placeholder="Enter your mail"  id="mail" onkeyup="mail();">
+                            <label id="mailerror" style="visibility: hidden;"></label></td>
+                       </tr>
+                   </tr>
+                    <tr>
+                        <td><br>Country:</td>
+                        <td><br>India <input type="radio" name="i" id="ind"></in>
+                        USA <input type="radio" name="i" id="usa"></in><label id="ns" style="visibility: hidden;"></label></td>
+                    </tr>
+                    <tr>
+                        <td><br>PhoneNumber:</td>
+                        <td><br><input type="text" placeholder="Enter PhoneNumber" id="phn" onkeyup="phonenb();">
+                            <label id="pnerror" style="visibility: hidden;">requried</label></td>
+                    </tr>
+                    <tr>
+                        <td><br>Hobbies:</td>
+                        <td><br><input type="checkbox" id="h1">Playing Games
+                        <input type="checkbox" id="h2">Reading Books
+                        <input type="checkbox" id="h3" >Watching Movies</td>
+                        <label id="herror" style="visibility:hidden" onkeyup="hobbies()"></label>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><br>DateofBirth:</td>
+                        <td><br><input type="date" id="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td><br>Photo:</td>
+                        <td><br><input type="file" id="image" required></td>
+                    </tr>
+                    <tr>
+                        <td><br>Address:</td>
+                        <td><br><textarea id="dig">Enter Address here</textarea> <label id="addresserror" style="color:red"></label></td>
+                    </tr>
+                    <tr>
+                        <td><br><input type="checkbox" id="c"><small>I accept all the conditions of the company</small></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td ><br><input type="submit" value="submit" id="sub" onclick="st();">
+                        <input type="submit" value="reset" id="res" onclick="nl();"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+    </body>
+</html>
